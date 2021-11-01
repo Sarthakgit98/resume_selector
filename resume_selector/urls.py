@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from resume_selector.views import DemoView
+from resume_selector.views import ResumeSelectorView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('demo/', DemoView.as_view())
+    path('resume_selector/resume', ResumeSelectorView.as_view())
 ]

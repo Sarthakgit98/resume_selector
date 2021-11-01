@@ -1,6 +1,12 @@
 from django.views import View
 from django.http import JsonResponse
 
-class DemoView(View):
+class ResumeSelectorView(View):
     def get(self, request):
-        return JsonResponse({'content': 'hello'})
+        print("get")
+        return JsonResponse({'content' : 'get'})
+    
+    def post(self, request):
+        print("post")
+        return JsonResponse({'content' : 'post'})
+
